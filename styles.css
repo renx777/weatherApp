@@ -1,0 +1,84 @@
+#main {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-family: bungee inline;
+}
+
+#city {
+    font-family: pacifico;
+    font-size: 40px;
+    font-style: bold;
+}
+
+#day {
+    font-size: 20px;
+    font-family: pacifico;
+}
+
+#forecast {
+    font-size: 20px;
+    font-family: pacifico;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    margin-top: -25px;
+    display: inline-block;
+}
+
+#stat {
+    margin-top: 0px;
+    background-color: lightgrey;
+}
+
+i {
+    font-size: 20px;
+    cursor: pointer
+}
+
+#t {
+    font-size: 80px;
+    font-family: shadows into light;
+}
+
+sup {
+    font-size: 80px;
+    font-family: shadows into light;
+}
+
+#cel:hover,
+#cel:focus,
+#cel:active {
+    color: white;
+}
+
+#far:hover {
+    color: white;
+}
+
+#icon {
+    margin-top: 10px;
+    background-color: lightgrey;
+}
+
+#statx {
+    margin-top: 10px;
+    padding-bottom: 29px;
+    background-color: lightgrey;
+    border-left: 1px solid white;
+    font-family: orbitron;
+    font-size: 20px;
+}
+
+body {
+    background-color: grey;
+}
+
+h1,
+.wi {
+    font-size: 70px;
+}
