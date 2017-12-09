@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var lat, long;
 
+// check if the user browser supports geolocation api,which is necessary to get the latitude and longitude of the place
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
     } else {
@@ -23,18 +24,19 @@ $(document).ready(function () {
             "&lon=" +
             long;
         console.log(url);
+
+        // once you get that lat and long of the user,use getJSON method to request api data from the api service here it is fcc-weather-api
         $.getJSON(url, function (datax) {
             var data = datax;
             console.log(data);
             console.log(data.name);
-            $("#city").text(data.name);
-
-            //  $('#day').text(data.forecast.txt_forecast.forecastday["0"].title);
-            // $('#forecast').text(data.forecast.txt_forecast.forecastday["0"].fcttext_metric);
-
             console.log(data.weather[0].icon);
             console.log(data.main.temp);
-            $("#icon").prepend("<img src=" + data.weather[0].icon + "></img>");
+
+        // after getting the necessary data from the api,populate the index.html with requried info
+            $("#city").text(data.name);
+
+             $("#icon").prepend("<img src=" + data.weather[0].icon + "></img>");
 
             $("#t").text(data.main.temp);
             $("#hum").text("Humidity: " + data.main.humidity);

@@ -11,6 +11,7 @@ h1 {
     font-family: pacifico;
     font-size: 40px;
     font-style: bold;
+   
 }
 
 #day {
@@ -33,6 +34,7 @@ img {
 #stat {
     margin-top: 0px;
     background-color: lightgrey;
+    border-radius: 5px
 }
 
 i {
@@ -63,22 +65,39 @@ sup {
 #icon {
     margin-top: 10px;
     background-color: lightgrey;
+    border-radius: 5px
 }
 
 #statx {
     margin-top: 10px;
     padding-bottom: 29px;
     background-color: lightgrey;
-    border-left: 1px solid white;
+    border-left: 1px solid rgb(0, 0, 0);
     font-family: orbitron;
     font-size: 20px;
+    height:114px;
+    border-radius: 5px
 }
 
 body {
-    background-color: grey;
+    background-color: grey
 }
 
 h1,
 .wi {
     font-size: 70px;
+}
+
+li{
+    background:grey;
+    margin-top:5px;
+    color:white;
+    list-style:none;
+    margin-right:-12px;
+    margin-left:-54px;
+    border-radius: 5px
+}
+
+ul{
+  
 }
